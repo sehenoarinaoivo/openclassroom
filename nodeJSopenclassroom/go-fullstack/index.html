@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.CSS">
+    <title>Calculaltrice</title>
+</head>
+<body>
+   <div id="container">
+       <h1>Calculaltrice</h1>
+       <div id="calculator">
+           <div id="header">
+               <input type="text" name="" value="0" autocomplete="off" disabled id="number">
+            </div>
+            <div id="body">
+               
+                    <div class="bouton" value="">7</div>
+                    <div class="bouton" value="">8</div>
+                    <div class="bouton" value="">9</div>
+                    <div class="bouton" value="">/</div>
+                    <div class="bouton" value="">4</div>
+                    <div class="bouton" value="">5</div>
+                    <div class="bouton" value="">6</div>
+                    <div class="bouton" value="">*</div>
+                    <div class="bouton" value="">1</div>
+                    <div class="bouton" value="">2</div>
+                    <div class="bouton" value="">3</div>
+                    <div class="bouton" value="">-</div>
+                    <div class="bouton" value="">0</div>
+                    <div class="bouton" value="">.</div>
+                    <div class="bouton" value="">=</div>
+                    <div class="bouton" value="">+</div>
+            </div>
+        </div>
+   </div>
+
+
+
+   
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- <script src="firstJquery.js"></script> -->
+    <script src="app.js"></script>
+    <script>
+        $(document).ready(function(){
+            var calc= new calculator();
+            calc.run();
+        })
+    </script>
+
+</body>
+</html>
