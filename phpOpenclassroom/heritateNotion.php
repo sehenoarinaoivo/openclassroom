@@ -38,8 +38,7 @@ class Admin extends User
     }
  
     // Méthode d'ajout d'un rôle, puis on supprime les doublons avec array_filter.
-    public function addRole(string $role): void
-    {
+    public function addRole(string $role): void {
         $this->roles[] = $role;
         $this->roles = array_filter($this->roles);
     }
