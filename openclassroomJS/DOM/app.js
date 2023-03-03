@@ -1,5 +1,5 @@
-
-const articles = document.getElementsByTagName('article');
+//Maka contenu ao anaty balise
+const articles = document.getElementsByTagName("article");
 const thirdArticle = articles[2];
 
 console.log(articles[0]);
@@ -40,3 +40,17 @@ elt2.classList.add("nouvelleClasse");    // Ajoute la classe nouvelleClasse à l
 elt2.classList.contains("nouvelleClasse");   // Retournera false car on vient de la supprimer
 */elt2.classList.replace("oldClass", "newClass"); // Remplacera oldClass par newClass si oldClass était présente sur l'élément
 
+let listeEl = document.querySelector("article > ul.important > li")
+
+console.log(listeEl.nextElementSibling);
+
+console.log("#main-content", document.getElementById("main-content"));
+
+console.log(".important", document.getElementsByClassName("important"));
+
+console.log("article", document.getElementsByTagName("article"));
+
+const liItem = document.querySelector("article ul.important > li");
+console.log("article ul.important > li", liItem);
+
+console.log("nextElementSibling", liItem.nextElementSibling);
